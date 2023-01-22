@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+.container {
+    margin-top: 25px;
+    height: 90vh;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+@media(max-width:376px) {
+    .container {
+        width: 370px;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .container>* {
+        min-width: 100%;
+    }
+
+    .one-two {
+        flex-direction: column;
+    }
+
+
+    .one-two>* {
+        min-width: 100%;
+    }
+}
+
+.left {
+    max-width: 75%;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right {
+    max-width: 25%;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 10px 10px lightgray;
+}
+
+.one-two {
+    max-height: 50%;
+    width: 100%;
+    display: flex;
+gap: 20px;
+}
+
+.card-one {
+    /* margin: 10px; */
+    max-width: 70%;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.one-two>* {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px lightgray;
+}
+
+.card-two {
+    /* margin: 10px; */
+    max-width: 30%;
+    background-color: hsl(194, 17%, 19%);
+}
+
+.card-five {
+    /* margin: 10px; */
+    max-width: 70%;
+    background-color: hsl(219, 29%, 14%);
+
+}
+
+.card-four {
+    /* margin: 10px; */
+    max-width: 30%;
+    background-color: hsl(0, 0%, 100%);
+
+
+}
+
+.intro {
+    padding: 20px;
+}
+
+.photo-heading {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.image-one {
+    padding: 0 20px;
+}
+
+.image-one img {
+    border-radius: 50%;
+    border: 3px solid hsl(0, 0%, 81%);
+}
+
+p {
+    margin-bottom: 15px;
+    max-width: 100%;
+
+}
+
+.information {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.second-information {
+    color: hsl(0, 0%, 81%);
+}
+
+.graduate {
+    color: hsl(0, 0%, 81%);
+    font-weight: lighter;
+}
+
+.client-name {
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+}
+
+.client-name-dark {
+    font-weight: 800;
+    color: hsl(219, 29%, 14%)
+}
+
+.information-dark {
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.second-information-dark {
+    color: gray;
+    line-height: 25px;
+}
